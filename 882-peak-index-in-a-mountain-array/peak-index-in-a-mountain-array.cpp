@@ -6,6 +6,8 @@ public:
         int start = 0 , end = arr.size()-1 , mid ;
         while(start<=end)
         {
+
+            // in case of mid = start +(end-start)/2 ; there will be error in test cases 
             mid = end +(start-end)/2 ;
             // peak element
             if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid + 1])
